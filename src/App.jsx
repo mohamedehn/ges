@@ -24,6 +24,7 @@ function App() {
         faire baisser de manière significative les
         consommations d'énergies`}
       />
+      <Slider/>
     </div>
   );
 }
