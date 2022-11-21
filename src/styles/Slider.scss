@@ -1,0 +1,28 @@
+.slider{
+    display: flex;
+    align-items: center;
+    .sliderImg{
+        width: 60%;
+        height: 600px;
+    }
+    .sliderContent{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        .sliderTitle{
+            text-align: center;
+        }
+        .more{
+            display: flex;
+            width: 60%;
+            justify-content: space-around;
+            .moreInfo{
+                background-color: #44d744;
+            }
+        }
+    }
+}
