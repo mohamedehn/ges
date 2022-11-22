@@ -4,6 +4,7 @@ import Intro from './components/Intro';
 import imgIntro from "./assets/intro.jpeg"
 import imgPhoto from "./assets/photovoltaique.png"
 import Slider from './components/Slider';
+import Product from './components/Product';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         faire baisser de manière significative les
         consommations d'énergies`}
       />
-      <Slider/>
+      <Product/>
     </div>
   );
 }
