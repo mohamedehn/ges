@@ -1,6 +1,6 @@
 import "../styles/Product.scss";
 import { useInView } from 'react-intersection-observer';
-
+import ampoule from "../assets/ampoule.webp"
 
 function Product (){
 
@@ -29,8 +29,8 @@ function Product (){
                 </div>
             </div>
             <div className="productCenter">
-                <img src="" alt="" />
-                <p></p>
+                <img src={ampoule} alt="lightImg" className="lightImg"/>
+                <p className="lightText">"L’action est la clé fondamentale de tout succès."</p>
             </div>
             <div className="productRight">
             <div className="productItem">

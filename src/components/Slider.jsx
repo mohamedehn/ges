@@ -14,7 +14,6 @@ const Slider = ({imageSrc, title, subtitle, flipped})=> {
         if(!flipped){
             return (
                 <>
-                    <img src={imageSrc} alt="" className="sliderImg"/>
                     <div className="sliderContent">
                         <h1 className="sliderTitle">{title}</h1>
                         <p className="sliderSubtitle">{subtitle}</p>
@@ -23,11 +22,17 @@ const Slider = ({imageSrc, title, subtitle, flipped})=> {
                             <p className="moreContact"> CONTACT</p>
                         </div>
                     </div>
+                    <img src={imageSrc} alt="" className="sliderImg"/>
+                    <div className="imgDescription">
+                        <p className="imgTitle"></p>
+                        <p className="imgText"></p>
+                    </div>
                 </>
             )
         }else{
             return (
                 <>  
+                    <img src={imageSrc} alt="" className="sliderImg"/>
                     <div className="sliderContent">
                         <h1 className="sliderTitle">{title}</h1>
                         <p className="sliderSubtitle">{subtitle}</p>
@@ -36,7 +41,6 @@ const Slider = ({imageSrc, title, subtitle, flipped})=> {
                             <p className="moreContact"> CONTACT</p>
                         </div>
                     </div>
-                    <img src={imageSrc} alt="" className="sliderImg"/>
                 </>
             )
         }

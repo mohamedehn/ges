@@ -5,7 +5,7 @@
     transform: scale(85% );
     transition: 2s;
     .sliderImg{
-        width: 60%;
+        width: 50%;
         height: 600px;
     }
     .sliderContent{
@@ -19,6 +19,13 @@
             text-align: center;
             margin-top: 55px;
         }
+        .sliderSubtitle{
+            width: 60%;
+            text-align: initial;
+            margin-top: 35px;
+            margin-bottom: 35px;
+            font-size: 20px;
+        }
         .more{
             display: flex;
             width: 60%;
@@ -27,11 +34,13 @@
                 background-color: #44d744;
                 padding: 10px;
                 width: 115px;
+                cursor: pointer;
             }
             .moreContact{
                 border: 1px solid #44d744;
                 padding: 10px;
                 width: 115px;
+                cursor: pointer;
             }
         }
     }

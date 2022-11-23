@@ -5,10 +5,19 @@ import imgIntro from "./assets/intro.jpeg"
 import imgPhoto from "./assets/photovoltaique.png"
 import Slider from './components/Slider';
 import Product from './components/Product';
+import Navbar from './components/Navbar';
+
+const navbarLinks = [
+  {url:"#", title : "ACCUEIL"},
+  {url:"#", title : "NOS PRESTATIONS"},
+  {url:"#", title : "A PROPOS DE NOUS"},
+  {url:"#", title : "CONTACT"},
+]
 
 function App() {
   return (
     <div className="App">
+      <Navbar navbarLinks={navbarLinks}/>
       <Intro imageSrc={imgIntro}/>
       <Slider 
         imageSrc={imgPhoto} 
