@@ -11,6 +11,7 @@ function Product (){
 
     return(
         <div className={inView? "product productZoom" : "product"} ref={ref}>
+            <p className="mainTitle">NOS PRESTATIONS</p>
             <div className="productLeft">
                 <div className="productItem">
                     <p className="productTitle">ISOLATION</p>

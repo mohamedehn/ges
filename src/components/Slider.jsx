@@ -5,7 +5,6 @@ import { useInView } from 'react-intersection-observer';
 const Slider = ({imageSrc, title, subtitle, flipped})=> {
 
         const { ref, inView } = useInView({
-          /* Optional options */
           threshold: 0.4,
         });
       
@@ -14,6 +13,7 @@ const Slider = ({imageSrc, title, subtitle, flipped})=> {
         if(!flipped){
             return (
                 <>
+                    <img src={imageSrc} alt="" className="sliderImg"/>
                     <div className="sliderContent">
                         <h1 className="sliderTitle">{title}</h1>
                         <p className="sliderSubtitle">{subtitle}</p>
@@ -22,11 +22,10 @@ const Slider = ({imageSrc, title, subtitle, flipped})=> {
                             <p className="moreContact"> CONTACT</p>
                         </div>
                     </div>
-                    <img src={imageSrc} alt="" className="sliderImg"/>
-                    <div className="imgDescription">
-                        <p className="imgTitle"></p>
-                        <p className="imgText"></p>
-                    </div>
+                    {/* <div className="imgDescription">
+                        <p className="imgTitle">ENSEMBLE, POUR DEMAIN.</p>
+                        <p className="imgText">Des installateurs reconnus garants de l'environnement(R.G.E)</p>
+                    </div> */}
                 </>
             )
         }else{

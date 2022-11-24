@@ -1,0 +1,21 @@
+@import "../styles/Mixin.scss";
+
+.countryHelp{
+    opacity: 0;
+    transform: scale(85%);
+    transition: 2s;
+    .countryHelpHeader{
+        .countryHelpImg{
+            position: absolute;
+            object-fit: cover;
+            display: flex;
+            width: 100%;
+        };
+    }
+}
+.countryHelpZoom{
+    opacity: 1;
+    transform: scale(100%);
+    transition: 2s;
+}
+

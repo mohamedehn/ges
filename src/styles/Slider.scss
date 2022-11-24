@@ -1,12 +1,19 @@
+@import "../styles/Mixin.scss";
+
 .slider{
     display: flex;
     align-items: center;
     opacity: 0;
     transform: scale(85% );
     transition: 2s;
+    @include mobile-only{
+        flex-direction: column;
+        background-color: rgb(236, 236, 236);
+    }
     .sliderImg{
         width: 50%;
         height: 600px;
+        @include mobile-only{width: 100%;}
     }
     .sliderContent{
         flex: 1;
@@ -25,11 +32,17 @@
             margin-top: 35px;
             margin-bottom: 35px;
             font-size: 20px;
+            @include mobile-only{
+                width: 90%;
+            }
         }
         .more{
             display: flex;
             width: 60%;
             justify-content: space-around;
+            @include mobile-only{
+                width: 90%;
+            }
             .moreInfo{
                 background-color: #44d744;
                 padding: 10px;
@@ -42,6 +55,17 @@
                 width: 115px;
                 cursor: pointer;
             }
+        }
+    }
+    .imgDescription{
+        position: absolute;
+        right: 65px;
+        top: 530px;
+        color: white;
+        .imgTitle{
+            color: #44d744;
+            font-weight: 700;
+            font-size: 32px;
         }
     }
 }

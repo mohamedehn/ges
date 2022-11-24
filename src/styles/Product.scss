@@ -1,3 +1,5 @@
+@import "../styles/Mixin.scss";
+
 .product{
     display: flex;
     height: 600px;
@@ -7,8 +9,32 @@
     opacity: 0;
     transform: scale(85% );
     transition: 2s;
+    @include mobile-only{
+        width: 100%;
+        margin-right: 0;
+        display: block;
+        margin-left: 0;
+        background-color: rgb(236, 236, 236);
+        height: 100%;
+    }
+    .mainTitle{
+        position: absolute;
+        top: 8px;
+        left: 475px;
+        z-index: 1;
+        font-weight: 800;
+        font-size: 25px;
+        @include mobile-only{
+            position: relative;
+            left: 0;
+        }
+    }
     .productItem{
         margin-left: 60px;
+        @include mobile-only{
+            margin-left: 20px;
+            padding-top: 20px;
+        }
         .moreInfo{
             background-color: #44d744;
             padding: 10px;
@@ -16,25 +42,41 @@
             font-size: 13px;
             margin-top: 20px;
             cursor: pointer;
+            @include mobile-only{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 5px;
+                width: 115px;
+            }
         }
     }
     .productLeft{
         display: grid;
+        padding-top: 80px;
+        @include mobile-only{
+            padding-top: 40px;
+        }
     }
     .productCenter{
         display: grid;
         position: relative;
+        @include mobile-only{
+            display: none;
+        }
         .lightImg{
             width: 700px;
-            height: 600px;
+            height: 500px;
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
+            position: relative;
+            top: 80px;
         }
         .lightText{
             color: white;
             background-color: black;
-            padding-top: 25px;
+            padding-top: 18px;
+            padding-bottom: 18px;
             position: absolute;
             bottom: 0px;
             width: 100%;
@@ -44,6 +86,10 @@
     }
     .productRight{
         display: grid;
+        padding-top: 80px;
+        @include mobile-only{
+            padding-top: 20px;
+        }
     }
 }
 

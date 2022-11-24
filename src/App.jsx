@@ -6,12 +6,20 @@ import imgPhoto from "./assets/photovoltaique.png"
 import Slider from './components/Slider';
 import Product from './components/Product';
 import Navbar from './components/Navbar';
+import {IoLogoFacebook} from "react-icons/io"
+import {BsInstagram} from "react-icons/bs"
+import {AiFillLinkedin} from "react-icons/ai"
+import CountryHelp from './components/CountryHelp';
+import foret from "./assets/foret.jpeg"
 
 const navbarLinks = [
   {url:"#", title : "ACCUEIL"},
   {url:"#", title : "NOS PRESTATIONS"},
   {url:"#", title : "A PROPOS DE NOUS"},
   {url:"#", title : "CONTACT"},
+  {url:"#", title : <IoLogoFacebook/>},
+  {url:"#", title : <BsInstagram/>},
+  {url:"#", title : <AiFillLinkedin/>},
 ]
 
 function App() {
@@ -35,6 +43,10 @@ function App() {
         consommations d'énergies`}
       />
       <Product/>
+      <CountryHelp
+        image={foret}
+        title={"Pour vous aider. De nombreuses aides de l'état"}
+      />
     </div>
   );
 }
