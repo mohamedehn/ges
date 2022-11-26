@@ -2,13 +2,14 @@
 
 .product{
     display: flex;
-    height: 600px;
+    position: relative;
     justify-content: space-between;
     align-content: center;
     margin-left: 25px;
     opacity: 0;
     transform: scale(85% );
     transition: 2s;
+    height: 100vh;
     @include mobile-only{
         width: 100%;
         margin-right: 0;
@@ -19,7 +20,7 @@
     }
     .mainTitle{
         position: absolute;
-        top: 8px;
+        top: 95px;
         left: 475px;
         z-index: 1;
         font-weight: 800;
@@ -53,6 +54,8 @@
     .productLeft{
         display: grid;
         padding-top: 80px;
+        position: relative;
+        align-content: space-around;
         @include mobile-only{
             padding-top: 40px;
         }
@@ -60,17 +63,18 @@
     .productCenter{
         display: grid;
         position: relative;
+        height: 100vh;
+        padding-top: 12%;
         @include mobile-only{
             display: none;
         }
         .lightImg{
             width: 700px;
-            height: 500px;
+            height: 100%;
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
             position: relative;
-            top: 80px;
         }
         .lightText{
             color: white;
@@ -87,6 +91,8 @@
     .productRight{
         display: grid;
         padding-top: 80px;
+        position: relative;
+        align-content: space-around;
         @include mobile-only{
             padding-top: 20px;
         }
@@ -100,4 +106,6 @@
     opacity: 1;
     transform: scale(100%);
     transition: 2s;
+    height: 100vh;
+    position: relative;
 }

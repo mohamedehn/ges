@@ -2,7 +2,7 @@ import "../styles/CountryHelp.scss";
 import { useInView } from 'react-intersection-observer';
 
 
-const CountryHelp = ({image, title, subtitle, text, info})=> {
+const CountryHelp = ({image})=> {
 
     const { ref, inView } = useInView({
         threshold: 0.4,
@@ -12,13 +12,10 @@ const CountryHelp = ({image, title, subtitle, text, info})=> {
       <div className={inView? "countryHelp countryHelpZoom" : "countryHelp"} ref={ref}>
         <div className="countryHelpHeader">
           <img src={image} alt="" className="countryHelpImg"/>
-          <p></p>
         </div>
-        <div className="countryHelpTitle">{title}</div>
-        <div className="countryHelpContent">
-          <p className="moreInfo">{info}</p>
-          <p className="countryHelpName">{subtitle}</p>
-          <p className="countryHelpText">{text}</p>
+        <div className="countryHelpMainTitle">
+          <p>Pour vous aider. De nombreuses aides de l'état.</p>
+          <p className="helpLink">Cliquer ici pour en savoir plus</p>
         </div>
       </div>
     );

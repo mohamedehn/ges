@@ -1,6 +1,6 @@
 import "../styles/Slider.scss";
 import { useInView } from 'react-intersection-observer';
-
+import ges from "../assets/ges.png"
 
 const Slider = ({imageSrc, title, subtitle, flipped})=> {
 
@@ -13,7 +13,8 @@ const Slider = ({imageSrc, title, subtitle, flipped})=> {
         if(!flipped){
             return (
                 <>
-                    <img src={imageSrc} alt="" className="sliderImg"/>
+                    <img src={imageSrc} alt="" className="sliderImg" id="propos"/>
+                    <img src={ges} alt="" className="sliderImgTitle"/>
                     <div className="sliderContent">
                         <h1 className="sliderTitle">{title}</h1>
                         <p className="sliderSubtitle">{subtitle}</p>

@@ -4,13 +4,14 @@ import ampoule from "../assets/ampoule.webp"
 
 function Product (){
 
+
     const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0.4,
       });
 
     return(
-        <div className={inView? "product productZoom" : "product"} ref={ref}>
+        <div className={inView? "product productZoom" : "product"} ref={ref} id="prestations">
             <p className="mainTitle">NOS PRESTATIONS</p>
             <div className="productLeft">
                 <div className="productItem">

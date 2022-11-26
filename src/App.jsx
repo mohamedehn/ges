@@ -11,14 +11,14 @@ import {BsInstagram} from "react-icons/bs"
 import {AiFillLinkedin} from "react-icons/ai"
 import CountryHelp from './components/CountryHelp';
 import foret from "./assets/foret.jpeg"
+import Partnership from './components/Partnership';
 
 const navbarLinks = [
   {url:"#", title : "ACCUEIL"},
-  {url:"#", title : "NOS PRESTATIONS"},
   {url:"#", title : "A PROPOS DE NOUS"},
   {url:"#", title : "CONTACT"},
   {url:"#", title : <IoLogoFacebook/>},
-  {url:"#", title : <BsInstagram/>},
+  {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>},
   {url:"#", title : <AiFillLinkedin/>},
 ]
 
@@ -43,10 +43,8 @@ function App() {
         consommations d'énergies`}
       />
       <Product/>
-      <CountryHelp
-        image={foret}
-        title={"Pour vous aider. De nombreuses aides de l'état"}
-      />
+      <CountryHelp image={foret}/>
+      <Partnership/>
     </div>
   );
 }
