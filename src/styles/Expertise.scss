@@ -1,0 +1,68 @@
+@import "../styles/Mixin.scss";
+
+.expertise{
+    opacity: 0;
+    transform: scale(85%);
+    transition: 2s;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    @include mobile-only{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .expertiseImg{
+        position: relative;
+        object-fit: cover;
+        display: flex;
+        width: 60%;
+        height: 100%;
+        padding-top: 70px;
+        @include mobile-only{
+            padding-top: 30px;
+            width: 100%;
+            height: 53%;
+        }
+    }
+    .expertiseContent{
+        width: 40%;
+        display: block;
+        position: relative;
+        margin-top: 160px;
+        margin-left: 65px;
+        @include mobile-only{
+            margin-top: 8px;
+            width: 90%;
+            margin-left: 28px;
+        }
+        .expertiseTitle{
+            font-weight: 800;
+            font-size: 25px;
+        }
+        .expertiseText{
+            margin-top: 50px;
+            font-size: 20px;
+            text-align: justify;
+            width: 80%;
+            @include mobile-only{
+                width: 95%;
+                margin-top: 22px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.expertiseZoom{
+    opacity: 1;
+    transform: scale(100%);
+    transition: 2s;
+    height: 100vh;
+    position: relative;
+    @include mobile-only{
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(236, 236, 236);
+    }
+}

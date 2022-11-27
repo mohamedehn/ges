@@ -6,18 +6,20 @@ import imgPhoto from "./assets/photovoltaique.png"
 import Slider from './components/Slider';
 import Product from './components/Product';
 import Navbar from './components/Navbar';
-import {IoLogoFacebook} from "react-icons/io"
+//import {IoLogoFacebook} from "react-icons/io"
 import {BsInstagram} from "react-icons/bs"
 import {AiFillLinkedin} from "react-icons/ai"
 import CountryHelp from './components/CountryHelp';
 import foret from "./assets/foret.jpeg"
 import Partnership from './components/Partnership';
+import Expertise from './components/Expertise';
+import Info from './components/Info';
 
 const navbarLinks = [
   {url:"#", title : "ACCUEIL"},
-  {url:"#", title : "A PROPOS DE NOUS"},
+  {url:"#", title : "NOS PRESTATIONS"},
   {url:"#", title : "CONTACT"},
-  {url:"#", title : <IoLogoFacebook/>},
+  {url:"#", title : "AIDES DE L'ETAT"},
   {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>},
   {url:"#", title : <AiFillLinkedin/>},
 ]
@@ -45,6 +47,8 @@ function App() {
       <Product/>
       <CountryHelp image={foret}/>
       <Partnership/>
+      <Expertise/>
+      <Info/>
     </div>
   );
 }

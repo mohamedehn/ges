@@ -2,6 +2,16 @@
     position: relative;
     height: 100vh;
     width: 100%;
+    opacity: 0;
+    transform: scale(85%);
+    transition: 2s;
+    .partnershipTitle{
+        position: relative;
+        top: 115px;
+        z-index: 1;
+        font-weight: 800;
+        font-size: 25px;
+    }
     .partnershipImg{
         position: relative;
         object-fit: fill;
@@ -9,4 +19,11 @@
         padding-top: 62px;
         width: 100%;
     }
+}
+.partnershipZoom{
+    opacity: 1;
+    transform: scale(100%);
+    transition: 2s;
+    height: 100vh;
+    position: relative;
 }

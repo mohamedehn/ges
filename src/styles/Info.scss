@@ -1,0 +1,82 @@
+@import "../styles/Mixin.scss";
+
+.info{
+    opacity: 0;
+    transform: scale(85%);
+    transition: 2s;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    width: 100%;
+    .infoImg{
+        filter: brightness(0.4);
+        width: 100%;
+        @include mobile-only{
+            object-fit: cover;
+        }
+    }
+    .infoTitle{
+        position: absolute;
+        top: 100px;
+        color: white;
+        font-size: 28px;
+        right: 0px;
+        left: 0px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+    }
+    .infoContent{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        justify-content: space-between;
+        font-size: 22px;
+        .infoContentLeft{
+            position: absolute;
+            top: 300px;
+            color: white;
+            left: 0px;
+            display: flex;
+            height: 230px;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-left: 250px;
+            @include mobile-only{
+                top: 180px;
+                justify-content: space-around;
+                margin-left: 0px;
+                left: 50px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .infoContentRight{
+            position: absolute;
+            top: 300px;
+            color: white;
+            right: 0px;
+            height: 230px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-right: 250px;
+            @include mobile-only{
+                top: 410px;
+                justify-content: space-around;
+                left: 50px;
+            }
+        }
+    }
+}
+.infoZoom{
+    opacity: 1;
+    transform: scale(100%);
+    transition: 2s;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}

@@ -28,6 +28,8 @@
         @include mobile-only{
             position: relative;
             left: 0;
+            top: 20px;
+            margin-left: 20px;
         }
     }
     .productItem{
@@ -98,7 +100,6 @@
         }
     }
 }
-
 .productTitle{
     font-weight: bolder;
 }
@@ -108,4 +109,7 @@
     transition: 2s;
     height: 100vh;
     position: relative;
+    @include mobile-only{
+        height: 100%;
+    }
 }

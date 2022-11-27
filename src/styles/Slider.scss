@@ -15,12 +15,17 @@
     .sliderImg{
         width: 50%;
         height: 100%;
-        @include mobile-only{width: 100%;}
+        @include mobile-only{
+            display: none;
+        }
     }
     .sliderImgTitle{
         position: absolute;
         width: 50%;
         margin-top: 665px;
+        @include mobile-only{
+            display: none;
+        }
     }
     .sliderContent{
         flex: 1;
