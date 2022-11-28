@@ -4,6 +4,7 @@ import './styles/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import{BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Help from './pages/Help';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +13,7 @@ root.render(
     <Router>
         <Routes>
           <Route path="/" element={<App/>}/>
+          <Route path="/help" element={<Help/>}/>
         </Routes>
       </Router>
   </React.StrictMode>

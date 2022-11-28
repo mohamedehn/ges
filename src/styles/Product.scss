@@ -20,9 +20,11 @@
     }
     .mainTitle{
         position: absolute;
-        top: 95px;
-        left: 475px;
-        z-index: 1;
+        padding-top: 60px;
+        justify-content: center;
+        display: flex;
+        left: 0;
+        right: 0;
         font-weight: 800;
         font-size: 25px;
         @include mobile-only{
@@ -32,71 +34,71 @@
             margin-left: 20px;
         }
     }
-    .productItem{
-        margin-left: 60px;
-        @include mobile-only{
-            margin-left: 20px;
-            padding-top: 20px;
-        }
-        .moreInfo{
-            background-color: #44d744;
-            padding: 10px;
-            width: 125px;
-            font-size: 13px;
-            margin-top: 20px;
-            cursor: pointer;
-            @include mobile-only{
-                margin-top: 10px;
-                margin-bottom: 10px;
-                padding: 5px;
-                width: 115px;
-            }
-        }
-    }
-    .productLeft{
-        display: grid;
-        padding-top: 80px;
-        position: relative;
-        align-content: space-around;
+    .allProduct{
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 100px;
+        cursor: pointer;
         @include mobile-only{
             padding-top: 40px;
         }
-    }
-    .productCenter{
-        display: grid;
-        position: relative;
-        height: 100vh;
-        padding-top: 12%;
-        @include mobile-only{
-            display: none;
-        }
-        .lightImg{
-            width: 700px;
-            height: 100%;
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-            position: relative;
-        }
-        .lightText{
-            color: white;
-            background-color: black;
-            padding-top: 18px;
-            padding-bottom: 18px;
-            position: absolute;
-            bottom: 0px;
-            width: 100%;
-            font-size: 22px;
-            text-align: center;
-        }
-    }
-    .productRight{
-        display: grid;
-        padding-top: 80px;
-        position: relative;
-        align-content: space-around;
-        @include mobile-only{
-            padding-top: 20px;
+        .card{
+            width: 24rem;
+            height: 285px;
+            background-color: #ffffff;
+            padding: 30px 10px;
+            color: #333333;
+            -webkit-box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 10%);
+            box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 10%);
+            border-radius: 15px;
+            margin: 10px;
+            @include mobile-only{
+                height: 60px;
+                border: none;
+                padding: 0;
+                background-color: rgb(236, 236, 236);;
+                box-shadow: none;
+                margin: 0;
+            }
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: opacity 1s cubic-bezier(.165, .84, .44, 1);
+                box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+                content: '';
+                opacity: 0;
+                z-index: -1;
+              }
+              &:hover,&:focus {
+                transform: scale3d(1.018, 1.018, 1);
+            }
+            .cardImg{
+                font-size: 62px;
+                justify-content: center;
+                display: flex;
+                align-content: center;
+                margin: auto;
+            }
+            .cardBody{
+                .cardTitle{
+                    font-size: 19px;
+                    font-weight: 800;
+                    justify-content: center;
+                    display: flex;
+                }
+                .cardText{
+                    text-align: justify;
+                    @include mobile-only{
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

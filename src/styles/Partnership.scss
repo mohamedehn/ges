@@ -1,3 +1,4 @@
+@import "../styles/Mixin.scss";
 .partnership{
     position: relative;
     height: 100vh;
@@ -12,12 +13,37 @@
         font-weight: 800;
         font-size: 25px;
     }
-    .partnershipImg{
-        position: relative;
-        object-fit: fill;
-        height: 100vh;
-        padding-top: 62px;
+    .partnershipList{
+        display: flex;
         width: 100%;
+        @include mobile-only{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+        .partnershipImg{
+            position: relative;
+            object-fit: fill;
+            height: 100vh;
+            padding-top: 62px;
+            width: 50%;
+            @include mobile-only{
+                width: 100%;
+                height: 50vh;
+            }
+        }
+        .partnershipImg2{
+            position: relative;
+            object-fit: fill;
+            height: 100vh;
+            padding-top: 62px;
+            width: 50%;
+            @include mobile-only{
+                width: 100%;
+                height: 50vh;
+                padding-top: 0;
+            }
+        }
     }
 }
 .partnershipZoom{

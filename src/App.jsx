@@ -17,9 +17,8 @@ import Info from './components/Info';
 
 const navbarLinks = [
   {url:"#", title : "ACCUEIL"},
-  {url:"#", title : "NOS PRESTATIONS"},
+  {url:"/help", title : "AIDES DE L'ETAT"},
   {url:"#", title : "CONTACT"},
-  {url:"#", title : "AIDES DE L'ETAT"},
   {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>},
   {url:"#", title : <AiFillLinkedin/>},
 ]

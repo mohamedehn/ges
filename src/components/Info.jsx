@@ -1,6 +1,8 @@
 import "../styles/Info.scss";
 import { useInView } from 'react-intersection-observer';
 import contact from "../assets/contact.jpeg";
+import {BsInstagram} from "react-icons/bs"
+import {AiFillLinkedin} from "react-icons/ai"
 
 function Info (){
 
@@ -26,9 +28,8 @@ function Info (){
                     </p>
                 </div>
                 <div className="infoContentRight">
-                    <p className="infoFacebook">Facebook</p>
-                    <p className="infoInstagram">Instagram</p>
-                    <p className="infoLinkedin">LinkedIn</p>
+                    <p className="infoInstagram"><BsInstagram/>Instagram</p>
+                    <p className="infoLinkedin"><AiFillLinkedin/>LinkedIn</p>
                 </div>
             </div>
             

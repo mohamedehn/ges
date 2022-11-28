@@ -1,5 +1,6 @@
 import "../styles/Partnership.scss";
-import partnership from "../assets/partenaires.png";
+import partnership1 from "../assets/partenaires1.png";
+import partnership2 from "../assets/partenaires2.png";
 import { useInView } from 'react-intersection-observer';
 
 
@@ -12,7 +13,10 @@ function Partnership (){
     return(
         <div className={inView? "partnership partnershipZoom" : "partnership"} ref={ref}>
             <p className="partnershipTitle">NOS PARTENAIRES</p>
-            <img src={partnership} alt="" className="partnershipImg"/>
+            <div className="partnershipList">
+                <img src={partnership1} alt="" className="partnershipImg"/>
+                <img src={partnership2} alt="" className="partnershipImg2"/>
+            </div>
         </div>
     )
 }
