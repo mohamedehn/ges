@@ -1,7 +1,7 @@
 import "../styles/Navbar.scss";
 import { FiMenu, FiX } from 'react-icons/fi';
 import { useState } from "react";
-
+import logo from "../assets/logo2.png"
 
 
 const Navbar = ({navbarLinks}) => {
@@ -14,7 +14,8 @@ const Navbar = ({navbarLinks}) => {
 
     return(
         <nav className="navbar">
-            <span className="navbarLogo">Green Energy Solutions</span>
+            <img src={logo} alt="" style={{width : '50px', position: 'absolute', left: "-9px"}}/>
+            <span className="navbarLogo">Green Energy Solutions</span> 
             {menuClicked? <FiMenu size={25} className="navbarMenu" onClick={toggleMenu}/> : 
             <FiX size={25} className="navbarMenu" onClick={toggleMenu}/> }
             <ul className={menuClicked? "navbarList" : "navbarList navbarListActive"}>

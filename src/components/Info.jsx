@@ -31,6 +31,7 @@ function Info (){
                     <p className="infoInstagram"><BsInstagram/>Instagram</p>
                     <p className="infoLinkedin"><AiFillLinkedin/>LinkedIn</p>
                 </div>
+                <div className="infoFooter"></div>
             </div>
             
         </div>

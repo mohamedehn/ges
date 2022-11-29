@@ -9,7 +9,7 @@
     display: flex;
     width: 100%;
     .infoImg{
-        filter: brightness(0.4);
+        filter: brightness(0.35);
         width: 100%;
         @include mobile-only{
             object-fit: cover;
@@ -25,6 +25,8 @@
         font-weight: 800;
         display: flex;
         justify-content: center;
+        width: 20%;
+        margin: auto;
     }
     .infoContent{
         display: flex;
@@ -47,7 +49,7 @@
                 top: 180px;
                 justify-content: space-around;
                 margin-left: 0px;
-                left: 50px;
+                left: 40px;
             }
             a{
                 text-decoration: none;
@@ -67,7 +69,7 @@
             @include mobile-only{
                 top: 410px;
                 justify-content: space-around;
-                left: 50px;
+                left: 40px;
             }
             .infoInstagram{
                 text-align: center;

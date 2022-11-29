@@ -15,7 +15,7 @@ const CountryHelp = ({image})=> {
         </div>
         <div className="countryHelpMainTitle">
           <p>Pour vous aider. De nombreuses aides de l'état.</p>
-          <p className="helpLink">Cliquer ici pour en savoir plus</p>
+          <a href="/help"><p className="helpLink">Cliquer ici pour en savoir plus</p></a>
         </div>
       </div>
     );
