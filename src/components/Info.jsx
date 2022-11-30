@@ -17,23 +17,27 @@ function Info (){
             <div className="infoContent">
                 <div className="infoContentLeft">
                     <a href="mailto:contact@greenenergysolutions.fr">
-                        <p className="infoMail">
+                        <div className="infoMail">
                             <p className="infoMailText">Mail</p>
-                            <p className="infoMailAdress">contact@greenenergysolutions.fr</p></p>
+                            <p className="infoMailAdress">contact@greenenergysolutions.fr</p>
+                        </div>
                     </a>
-                    <p className="infoAdress">
+                    <div className="infoAdress">
                         <p>Adresse</p>
                         <p>40 Rue de Bruxelles</p>
                         <p>69100 VILLEURBANNE</p>
-                    </p>
+                    </div>
                 </div>
                 <div className="infoContentRight">
                     <p className="infoInstagram"><BsInstagram/>Instagram</p>
                     <p className="infoLinkedin"><AiFillLinkedin/>LinkedIn</p>
                 </div>
-                <div className="infoFooter"></div>
-            </div>
-            
+                <div className="infoFooter">
+                    <p>©Copyright 2022 Green Energy Solutions - Tout droit réservé</p>
+                    <p>Mentions légales</p>
+                    <p>Powered by Ehn-Dev</p>
+                </div>
+            </div> 
         </div>
     )
 }

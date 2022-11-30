@@ -21,7 +21,7 @@ const Navbar = ({navbarLinks}) => {
             <ul className={menuClicked? "navbarList" : "navbarList navbarListActive"}>
             {navbarLinks.map((item) =>{
                 return (
-                <li className="navbarItem" key={item.title}>
+                <li className="navbarItem" key={item.id}>
                     <a href={item.url} className="navbarLink">{item.title}</a>
                 </li>
                 );

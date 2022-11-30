@@ -16,11 +16,11 @@ import Expertise from './components/Expertise';
 import Info from './components/Info';
 
 const navbarLinks = [
-  {url:"#", title : "ACCUEIL"},
-  {url:"/help", title : "AIDES DE L'ETAT"},
-  {url:"#", title : "CONTACT"},
-  {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>},
-  {url:"#", title : <AiFillLinkedin/>},
+  {url:"#", title : "ACCUEIL", id:"1"},
+  {url:"/help", title : "AIDES DE L'ETAT", id: "2"},
+  {url:"/contact", title : "CONTACT", id:"3"},
+  {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>, id:"4"},
+  {url:"#", title : <AiFillLinkedin/>, id:"5"},
 ]
 
 function App() {
@@ -31,17 +31,10 @@ function App() {
       <Slider 
         imageSrc={imgPhoto} 
         title={"QUI SOMMES NOUS ?"}
-        subtitle={`Basée en région Rhône-Alpes Auvergne,
-        Green Energy Solutions est une startup
-        indépendantede conseils, d'études et de travaux
-        en matière d'économie énergétique destinée aux
-        particuliers et aux professionnelles.
-        Soucieux des problématiques liées à
-        l'environnement, nous avons pour ambition de
-        promouvoir les énergies renouvelables et
-        permettre à tout un chacun de les adopter et de
-        faire baisser de manière significative les
-        consommations d'énergies`}
+        subtitle={`Basée en région Rhône-Alpes Auvergne,Green Energy Solutions est une startup indépendantede conseils, d'études et de travaux
+        en matière d'économie énergétique destinée aux particuliers et aux professionnelles. Soucieux des problématiques liées à l'environnement, 
+        nous avons pour ambition de promouvoir les énergies renouvelables et permettre à tout un chacun de les adopter et de faire baisser de 
+        manière significative les consommations d'énergies`}
       />
       <Product/>
       <CountryHelp image={foret}/>

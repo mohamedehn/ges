@@ -8,26 +8,26 @@ import Card from "react-bootstrap/Card"
 
 
 const navbarLinks = [
-    {url:"/", title : "ACCUEIL"},
-    {url:"/help", title : "AIDES DE L'ETAT"},
-    {url:"#", title : "CONTACT"},
-    {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>},
-    {url:"#", title : <AiFillLinkedin/>},
+    {url:"/", title : "ACCUEIL", id:"1"},
+    {url:"/help", title : "AIDES DE L'ETAT", id:"2"},
+    {url:"/contact", title : "CONTACT", id:"3"},
+    {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>, id:"4"},
+    {url:"#", title : <AiFillLinkedin/>, id:"5"},
   ]
 
   const dataHelp = [
       {title: "TVA à 5,5%", content : `L’État a mis en place un taux de TVA réduit à 5,5% afin d'encourager les particuliers à
-      entreprendre des travaux d'amélioration de l'habitat.`},
+      entreprendre des travaux d'amélioration de l'habitat.`, id:"1"},
       {title: "MaPrimeRénov'", content : `Des avantages fiscaux vous permettant d’obtenir une aide de l’État pour vos
-      travaux d’amélioration de l’isolation, et ce quels que soient vos revenus.`},
+      travaux d’amélioration de l’isolation, et ce quels que soient vos revenus.`, id:"2"},
       {title: "Le C.E.E", content : `Si vous réalisez des travaux d'isolation, vous obtiendrez un Certificat d’économie d’énergie qu’un 
-      fournisseur d’énergie doit racheter sous forme d’offre de service ou de primes, la Prime Énergie.`},
+      fournisseur d’énergie doit racheter sous forme d’offre de service ou de primes, la Prime Énergie.`, id:"3"},
       {title: `L'Éco-PTZ : le prêt à taux zéro`, content : `Destiné au financement des travaux de rénovation énergétique, il est applicable
-      sans aucune condition de ressources.`},
+      sans aucune condition de ressources.`, id:"4"},
       {title: `Agence nationale de l'habitat`, content : `L'Anah accorde des aides aux propriétaires pour la réalisation des travaux 
-      d'isolation thermique. Ils peuvent bénéficier de 35% jusqu'à 50 % de subventions en fonctions des revenus.`},
+      d'isolation thermique. Ils peuvent bénéficier de 35% jusqu'à 50 % de subventions en fonctions des revenus.`, id:"5"},
       {title:`Action Logement`, content : `Dispositif pour la rénovation énergétique réservé principalement aux revenus les
-      plus modestes, l'aide peut aller jusqu'à 20.000 €`},
+      plus modestes, l'aide peut aller jusqu'à 20.000 €`, id:"6"},
   ]
 
 function Help (){
@@ -46,14 +46,19 @@ function Help (){
                 <div className="helpContent">
                     {
                         dataHelp.map((help)=>(
-                            <Card className="card">
-                                <Card.Body className="cardBody">
+                            <Card className="card" key={help.id}>
+                                <Card.Body className="cardBody" key={help.id}>
                                     <Card.Title className="cardTitle">{help.title}</Card.Title>
                                     <Card.Text className="cardText">{help.content}</Card.Text>
                                 </Card.Body>
                             </Card>
                         ))
                     }
+                    <div className="infoFooter">
+                        <p>©Copyright 2022 Green Energy Solutions - Tout droit réservé</p>
+                        <p>Mentions légales</p>
+                        <p>Powered by Ehn-Dev</p>
+                    </div>
                 </div>
             </div>
         </div>
