@@ -14,6 +14,7 @@ import foret from "./assets/foret.jpeg"
 import Partnership from './components/Partnership';
 import Expertise from './components/Expertise';
 import Info from './components/Info';
+import Footer from './components/Footer';
 
 const navbarLinks = [
   {url:"#", title : "ACCUEIL", id:"1"},
@@ -41,6 +42,7 @@ function App() {
       <Partnership/>
       <Expertise/>
       <Info/>
+      <Footer/>
     </div>
   );
 }

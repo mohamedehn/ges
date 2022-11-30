@@ -32,11 +32,6 @@ function Info (){
                     <p className="infoInstagram"><BsInstagram/>Instagram</p>
                     <p className="infoLinkedin"><AiFillLinkedin/>LinkedIn</p>
                 </div>
-                <div className="infoFooter">
-                    <p>©Copyright 2022 Green Energy Solutions - Tout droit réservé</p>
-                    <p>Mentions légales</p>
-                    <p>Powered by Ehn-Dev</p>
-                </div>
             </div> 
         </div>
     )

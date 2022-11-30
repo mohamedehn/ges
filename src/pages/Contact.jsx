@@ -4,6 +4,7 @@ import {BsInstagram} from "react-icons/bs";
 import {AiFillLinkedin} from "react-icons/ai";
 import { useInView } from 'react-intersection-observer';
 import contact from "../assets/contact.jpeg";
+import Footer from "../components/Footer";
 
 const navbarLinks = [
     {url:"/", title : "ACCUEIL", id:"1"},
@@ -25,14 +26,30 @@ function Contact (){
             <div className={inView? "contact contactZoom" : "contact"} ref={ref}>
                 <img src={contact} alt="" className="contactImg"/>
                 <div className="contactContent">
-                    
-                </div>
-                <div className="contactFooter">
-                        <p>©Copyright 2022 Green Energy Solutions - Tout droit réservé</p>
-                        <p>Mentions légales</p>
-                        <p>Powered by Ehn-Dev</p>
+                    <form name="contact" method="post" className="contactForm" data-netlify="true" onSubmit="submit">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p>
+                            <label>Nom: <input type="text" name="name" required/></label>
+                        </p>
+                        <p>
+                            <label>Prénom: <input type="text" name="name" required/></label>
+                        </p>
+                        <p>
+                            <label>Email: <input type="email" name="email" required/></label>
+                        </p>
+                        <p>
+                            <label>Téléphone: <input type="tel" name="tel" size="10" required/></label>
+                        </p>
+                        <p>
+                            <label>Message: <textarea name="message" required></textarea></label>
+                        </p>
+                        <p>
+                             <button type="submit">Envoyer</button>
+                        </p>
+                    </form>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

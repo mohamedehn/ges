@@ -5,6 +5,7 @@ import "../styles/Help.scss";
 import { useInView } from 'react-intersection-observer';
 import foret from "../assets/foret.jpeg"
 import Card from "react-bootstrap/Card"
+import Footer from "../components/Footer";
 
 
 const navbarLinks = [
@@ -54,13 +55,9 @@ function Help (){
                             </Card>
                         ))
                     }
-                    <div className="infoFooter">
-                        <p>©Copyright 2022 Green Energy Solutions - Tout droit réservé</p>
-                        <p>Mentions légales</p>
-                        <p>Powered by Ehn-Dev</p>
-                    </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
