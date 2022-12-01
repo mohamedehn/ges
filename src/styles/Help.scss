@@ -52,18 +52,22 @@
                 transform: scale3d(1.018, 1.018, 1);
                 background-color :rgb(234, 255, 242);
             }
-            .cardBody{
-                .cardTitle{
-                    z-index: 1;
-                    font-size: 19px;
-                    font-weight: 800;
-                    justify-content: center;
-                    display: flex;
-                }
-                .cardText{
-                    text-align: justify;
-                    @include mobile-only{
-                        display: none;
+            a{
+                text-decoration: none;
+                color: black;
+                .cardBody{
+                    .cardTitle{
+                        z-index: 1;
+                        font-size: 19px;
+                        font-weight: 800;
+                        justify-content: center;
+                        display: flex;
+                    }
+                    .cardText{
+                        text-align: justify;
+                        @include mobile-only{
+                            display: none;
+                        }
                     }
                 }
             }
