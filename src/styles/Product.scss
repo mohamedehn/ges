@@ -43,7 +43,7 @@
         padding-top: 100px;
         cursor: pointer;
         @include mobile-only{
-            padding-top: 40px;
+            padding-top: 50px;
         }
         .card{
             width: 24rem;
@@ -62,6 +62,8 @@
                 background-color: rgb(236, 236, 236);;
                 box-shadow: none;
                 margin: 0;
+                display: flex;
+                margin-left: 60px;
             }
             &::after {
                 position: absolute;
@@ -88,12 +90,16 @@
                 display: flex;
                 align-content: center;
                 margin: auto;
+                @include mobile-only{
+                    margin: 0;
+                }
             }
             .cardBody{
                 @include mobile-only{
-                    width: 50%;
+                    width: 60%;
                     justify-content: center;
-                    display: contents;
+                    align-items: center;
+                    display: flex;
                 }
                 .cardTitle{
                     font-size: 19px;
