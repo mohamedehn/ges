@@ -17,7 +17,7 @@ import Info from './components/Info';
 import Footer from './components/Footer';
 
 const navbarLinks = [
-  {url:"#", title : "ACCUEIL", id:"1"},
+  {url:"/", title : "ACCUEIL", id:"1"},
   {url:"/help", title : "AIDES DE L'ETAT", id: "2"},
   {url:"/contact", title : "CONTACT", id:"3"},
   {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>, id:"4"},
