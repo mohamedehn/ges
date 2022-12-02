@@ -21,8 +21,8 @@ const navbarLinks = [
   {url:"/help", title : "AIDES DE L'ETAT", id: "2"},
   {url:"/contact", title : "CONTACT", id:"3"},
   {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>, id:"4"},
-  {url:"#", title : <AiFillLinkedin/>, id:"5"},
-  {url:"#", title : <IoLogoFacebook/>, id:"6"},
+  {url:"https://www.linkedin.com/company/gesfrance/", title : <AiFillLinkedin/>, id:"5"},
+  {url:"https://www.facebook.com/profile.php?id=100083332664949", title : <IoLogoFacebook/>, id:"6"},
 ]
 
 function App() {

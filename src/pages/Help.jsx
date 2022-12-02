@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import {BsInstagram} from "react-icons/bs";
 import {AiFillLinkedin} from "react-icons/ai";
+import {IoLogoFacebook} from "react-icons/io"
 import "../styles/Help.scss";
 import { useInView } from 'react-intersection-observer';
 import foret from "../assets/foret.jpeg"
@@ -14,6 +15,7 @@ const navbarLinks = [
     {url:"/contact", title : "CONTACT", id:"3"},
     {url:"https://www.instagram.com/greenenergysolutions_/", title : <BsInstagram/>, id:"4"},
     {url:"#", title : <AiFillLinkedin/>, id:"5"},
+    {url:"https://www.facebook.com/profile.php?id=100083332664949", title : <IoLogoFacebook/>, id:"6"},
   ]
 
   const dataHelp = [

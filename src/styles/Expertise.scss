@@ -21,7 +21,8 @@
         height: 100%;
         @include mobile-only{
             width: 100%;
-            height: 57%;
+            object-fit: contain;
+            height: 46%;
         }
     }
     .expertiseContent{
@@ -34,6 +35,7 @@
             margin-top: 20px;
             width: 90%;
             margin-left: 28px;
+            margin-bottom: 50px;
         }
         .expertiseTitle{
             font-weight: 800;

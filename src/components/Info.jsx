@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import contact from "../assets/contact.jpeg";
 import {BsInstagram} from "react-icons/bs"
 import {AiFillLinkedin} from "react-icons/ai"
+import {IoLogoFacebook} from "react-icons/io"
 
 function Info (){
 
@@ -29,8 +30,24 @@ function Info (){
                     </div>
                 </div>
                 <div className="infoContentRight">
-                    <p className="infoInstagram"><BsInstagram/>Instagram</p>
-                    <p className="infoLinkedin"><AiFillLinkedin/>LinkedIn</p>
+                    <div className="instagram">
+                        <a href="https://www.instagram.com/greenenergysolutions_/">
+                            <BsInstagram/>
+                            <p className="infoInstagram">Instagram</p>
+                        </a> 
+                    </div>
+                    <div className="linkedin">
+                        <a href="https://www.linkedin.com/company/gesfrance/">
+                            <AiFillLinkedin/>     
+                            <p className="infoLinkedin">LinkedIn</p> 
+                        </a>
+                    </div>
+                    <div className="facebook">
+                        <a href="https://www.facebook.com/profile.php?id=100083332664949">
+                            <IoLogoFacebook/>     
+                            <p className="infoFacebook">Facebook</p> 
+                        </a>
+                    </div>
                 </div>
             </div> 
         </div>

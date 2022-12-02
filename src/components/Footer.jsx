@@ -4,7 +4,7 @@ function Footer (){
     return (
         <div className="footer">
             <p>©Copyright 2022 Green Energy Solutions - Tout droit réservé</p>
-                <p>Mentions légales</p>
+                <p><a href="/mentions">Mentions légales</a></p>
                 <p>Powered by Digital Comet</p>
         </div>
     )
