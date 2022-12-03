@@ -62,11 +62,15 @@
                 width: 120px;
                 cursor: pointer;
             }
-            .moreContact{
-                border: 1px solid #44d744;
-                padding: 10px;
-                width: 120px;
-                cursor: pointer;
+            .sliderNavlink{
+                text-decoration: none;
+                color: black;
+                .moreContact{
+                    border: 1px solid #44d744;
+                    padding: 10px;
+                    width: 120px;
+                    cursor: pointer;
+                }
             }
         }
     }

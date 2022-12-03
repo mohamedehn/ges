@@ -16,14 +16,27 @@
     }
     .helpContent{
         display: flex;
-        margin-top: 65px;
         justify-content: space-between;
         height: 88vh;
         width: 100%;
         flex-wrap: wrap;
         align-content: space-around;
+        margin: auto;
+        width: 97%;
         @include mobile-only{
-            margin-top: 28px;
+            margin-top: 0px;
+        }
+        .helpTitle{
+            position: relative;
+            top: 65px;
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            @include mobile-only{
+                top: 75px;
+            }
         }
         .card{
             width: 24rem;
@@ -37,6 +50,8 @@
             box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 10%);
             border-radius: 15px;
             margin: 10px;
+            position: relative;
+            top: 50px;
             @include mobile-only{
                 height: 30px;
                 border: none;
@@ -47,6 +62,7 @@
                 width: 18rem;
                 margin-right: auto;
                 margin-left: auto;
+                top: 50px;
             }
               &:hover,&:focus {
                 transform: scale3d(1.018, 1.018, 1);

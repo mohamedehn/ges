@@ -2,6 +2,7 @@ import "../styles/Navbar.scss";
 import { FiMenu, FiX } from 'react-icons/fi';
 import { useState } from "react";
 import logo from "../assets/logo2.png"
+import { NavLink } from "react-router-dom";
 
 
 const Navbar = ({navbarLinks}) => {
@@ -22,7 +23,8 @@ const Navbar = ({navbarLinks}) => {
             {navbarLinks.map((item) =>{
                 return (
                 <li className="navbarItem" key={item.id}>
-                    <a href={item.url} className="navbarLink">{item.title}</a>
+                    <NavLink to={item.url} className="navbarLink">{item.title}</NavLink>
+                    {/* <a href={item.url} className="navbarLink">{item.title}</a> */}
                 </li>
                 );
             })}

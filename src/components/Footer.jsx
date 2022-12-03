@@ -1,10 +1,11 @@
 import "../styles/Footer.scss";
+import { NavLink } from "react-router-dom";
 
 function Footer (){
     return (
         <div className="footer">
             <p>©Copyright 2022 Green Energy Solutions - Tout droit réservé</p>
-                <p><a href="/mentions">Mentions légales</a></p>
+                <NavLink to={"/mentions"} className="footerNavlink"><p>Mentions légales</p></NavLink>
                 <p>Powered by Digital Comet</p>
         </div>
     )

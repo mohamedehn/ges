@@ -1,6 +1,7 @@
 import "../styles/Slider.scss";
 import { useInView } from 'react-intersection-observer';
 import ges from "../assets/ges.png"
+import { NavLink } from "react-router-dom";
 
 const Slider = ({imageSrc, title, subtitle, flipped})=> {
 
@@ -20,7 +21,7 @@ const Slider = ({imageSrc, title, subtitle, flipped})=> {
                         <p className="sliderSubtitle">{subtitle}</p>
                         <div className="more">
                             <p className="moreInfo">EN SAVOIR +</p>
-                            <p className="moreContact"> CONTACT</p>
+                            <NavLink to={"/contact"} className="sliderNavlink"><p className="moreContact">CONTACT</p></NavLink>
                         </div>
                     </div>
                     {/* <div className="imgDescription">

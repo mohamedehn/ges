@@ -73,8 +73,10 @@ function Help (){
             <Navbar navbarLinks={navbarLinks}/>
             <div className={inView? "help helpZoom" : "help"} ref={ref}>
                 <img src={foret} alt="" className="helpImg"/>
-                <p className="helpTitle">De nombreuses de l'état sont possible. Ci-dessous la liste. Contactez nous pour plus d'informations</p>
+                
                 <div className="helpContent">
+                <p className="helpTitle">De nombreuses aides de l'état sont possible. Vous trouverez ci-dessous la liste. N'hésitez pas à cliquer
+                pour être rediriger sur le site du gouvernement ou  à nous contacter pour plus d'informations</p>
                     {
                         dataHelp.map((help)=>(
                             <Card className="card" key={help.id}>
