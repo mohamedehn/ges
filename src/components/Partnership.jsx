@@ -1,6 +1,6 @@
 import "../styles/Partnership.scss";
-import partnership1 from "../assets/partenaires1.png";
-import partnership2 from "../assets/partenaires2.png";
+import partnership1 from "../assets/partenaires1.webp";
+import partnership2 from "../assets/partenaires2.webp";
 import { useInView } from 'react-intersection-observer';
 
 

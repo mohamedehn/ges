@@ -77,6 +77,38 @@
             }
         }
     }
+    .navbarExtList{
+        @include mobile-only{
+            width: 100%;
+            display: flex;
+        }
+        .navbarLink{
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px 5px;
+            border-style: solid;
+            border-width: 0px 0px 1px 0px;
+            border-color: transparent;
+            transition: 250ms;
+            &:hover{
+                border-color: white;
+                transition: 250ms;
+            }
+            @include mobile-only{
+                display: flex;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin: 0px;
+                border-width: 0px;
+                background-color: black;
+                opacity: 0.75;
+            }
+        }
+    }
     .navbarListActive{
         @include mobile-only{
             left: 0;

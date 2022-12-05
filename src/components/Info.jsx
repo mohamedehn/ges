@@ -1,6 +1,6 @@
 import "../styles/Info.scss";
 import { useInView } from 'react-intersection-observer';
-import contact from "../assets/contact.jpeg";
+import contact from "../assets/contact.webp";
 import {BsInstagram} from "react-icons/bs"
 import {AiFillLinkedin} from "react-icons/ai"
 import {IoLogoFacebook} from "react-icons/io"

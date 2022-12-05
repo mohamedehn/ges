@@ -1,6 +1,6 @@
 import "../styles/Slider.scss";
 import { useInView } from 'react-intersection-observer';
-import ges from "../assets/ges.png"
+import ges from "../assets/ges.webp"
 import { NavLink } from "react-router-dom";
 
 const Slider = ({imageSrc, title, subtitle, flipped})=> {
