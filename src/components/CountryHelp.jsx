@@ -1,5 +1,6 @@
 import "../styles/CountryHelp.scss";
 import { useInView } from 'react-intersection-observer';
+import { NavLink } from "react-router-dom";
 
 
 const CountryHelp = ({image})=> {
@@ -15,7 +16,7 @@ const CountryHelp = ({image})=> {
         </div>
         <div className="countryHelpMainTitle">
           <p>Pour vous aider. De nombreuses aides de l'état.</p>
-          <a href="/help"><p className="helpLink">Cliquer ici pour en savoir plus</p></a>
+          <NavLink to={"/help"}><p className="helpLink">Cliquer ici pour en savoir plus</p></NavLink>
         </div>
       </div>
     );
