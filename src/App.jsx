@@ -8,7 +8,7 @@ import Product from './components/Product';
 import Navbar from './components/Navbar';
 import CountryHelp from './components/CountryHelp';
 import foret from "./assets/foret.webp"
-import Partnership from './components/Partnership';
+// import Partnership from './components/Partnership';
 import Expertise from './components/Expertise';
 import Info from './components/Info';
 import Footer from './components/Footer';
@@ -37,7 +37,7 @@ function App() {
       />
       <Product/>
       <CountryHelp image={foret}/>
-      <Partnership/>
+      {/* <Partnership/> */}
       <Expertise/>
       <Info/>
       <Footer/>
