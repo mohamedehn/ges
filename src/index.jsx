@@ -9,12 +9,13 @@ import Contact from './pages/Contact';
 import Mentions from './pages/Mentions';
 
 
+// @ts-ignore
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
         <Routes>
-          <Route exact path="/" element={<App/>}/>
+          <Route path="/" element={<App/>}/>
           <Route path="/help" element={<Help/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/mentions" element={<Mentions/>}/>
