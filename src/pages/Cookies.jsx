@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Cookies.scss";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 const navbarLinks = [
     {url:"/", title : "ACCUEIL", id:"1"},
@@ -11,6 +12,11 @@ const navbarLinks = [
 
 
 function Cookies () {
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
     return(
         <div className="cookies">
             <Navbar navbarLinks={navbarLinks}/>
@@ -100,7 +106,7 @@ function Cookies () {
                         « dernière mise à jour » en haut de ce document.
                     </p>
                     <p>
-                        
+
                     </p>
                 </div>
             </div>

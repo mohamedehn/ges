@@ -2,6 +2,7 @@ import "../styles/Mentions.scss";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import React from "react";
+import { useEffect } from "react";
 
 const navbarLinks = [
     {url:"/", title : "ACCUEIL", id:"1"},
@@ -13,7 +14,10 @@ const navbarLinks = [
 function Mentions (){
 
    
-
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+    
     return (
         <div className="mentions">
             <Navbar navbarLinks={navbarLinks}/>
