@@ -1,0 +1,35 @@
+@import "../styles/Mixin.scss";
+
+.cookies{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    .cookies-details{
+        margin-top: 200px;
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: justify;
+        max-width: 90%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        h3{
+            padding-top: 60px;
+        }
+        p{
+            padding-top: 30px;
+            text-align: justify;
+            
+        }
+        h4{
+            padding-top: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

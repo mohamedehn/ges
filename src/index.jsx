@@ -7,6 +7,8 @@ import{BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Help from './pages/Help';
 import Contact from './pages/Contact';
 import Mentions from './pages/Mentions';
+import Cookies from './pages/Cookies';
+
 
 
 // @ts-ignore
@@ -19,6 +21,7 @@ root.render(
           <Route path="/help" element={<Help/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/mentions" element={<Mentions/>}/>
+          <Route path="/cookies" element={<Cookies/>}/>
         </Routes>
       </Router>
   </React.StrictMode>

@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import {IoLogoFacebook} from "react-icons/io"
 import {BsInstagram} from "react-icons/bs"
 import {AiFillLinkedin} from "react-icons/ai"
+import React from "react";
 
 
 const Navbar = ({navbarLinks}) => {
